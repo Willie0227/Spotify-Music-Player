@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Spotify Music Player</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="leftPart">
+
+        <div class="musicPlaying">
+
+            <img src="" alt="" class="musicImg">
+
+        </div>
+
+        <input
+                type="range"
+                id="progress-bar"
+                min="0"
+                max=""
+                value="0"
+                onchange="changeProgressBar()"
+        />
+        <div class="currentTime"></div>
+        <div>&nbsp;&nbsp;</div>
+        <div class="durationTime"></div>
+        <div class="musicControl">
+
+
+            <!--            <div class="iconGroup">-->
+            <i onclick="lastSong()" class="fas fa-backward icons musicControlIcons"></i>
+            <i onclick="checkPlay()" class="fas fa-play icons musicControlIcons " id="defaultPlayPause"></i>
+<!--            <i onclick="pause()" class="fas fa-pause icons musicControlIcons"></i>-->
+            <i onclick="nextSong()" class="fas fa-forward icons musicControlIcons"></i>
+            <i onclick="random()" class="fas fa-random musicControlIcons"></i>
+<!--            <i onclick="repeatSong()" class="far fa-repeat-1-alt musicControlIcons" id="defaultRepeat"></i>-->
+            <i onclick="repeatSong()" class="far fa-repeat-alt musicControlIcons" id="defaultRepeat"></i>
+            <!--            </div>-->
+
+        </div>
+
+    </div>
+
+    <div class="rightPart">
+        <div class="musics">
+            <div class="playlistTitle">
+                <h2 class="playlist">Playlist: </h2>
+            </div>
+
+            <div class="mus0 music" onclick="choice(0)">
+
+                <div class="musicNum">1. &nbsp;&nbsp;</div>
+                <div class="musicTitle0"></div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate0"></div>
+
+            </div>
+            <div class="mus1 music" onclick="choice(1)">
+
+                <div class="musicNum">2. &nbsp;&nbsp;</div>
+                <div class="musicTitle1">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate1"></div>
+
+            </div>
+            <div class="mus2 music" onclick="choice(2)">
+
+                <div class="musicNum">3. &nbsp;&nbsp;</div>
+                <div class="musicTitle2">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate2"></div>
+
+            </div>
+            <div class="mus3 music" onclick="choice(3)">
+
+                <div class="musicNum">4.&nbsp;&nbsp;</div>
+                <div class="musicTitle3">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate3"></div>
+
+            </div>
+            <div class="mus4 music" onclick="choice(4)">
+
+                <div class="musicNum">5. &nbsp;&nbsp;</div>
+                <div class="musicTitle4">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate4"></div>
+
+            </div>
+            <div class="mus5 music" onclick="choice(5)">
+
+                <div class="musicNum">6. &nbsp;&nbsp;</div>
+                <div class="musicTitle5">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate5"></div>
+
+            </div>
+            <div class="mus6 music" onclick="choice(6)">
+
+                <div class="musicNum">7. &nbsp;&nbsp;</div>
+                <div class="musicTitle6">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate6"></div>
+
+            </div>
+            <div class="mus7 music" onclick="choice(7)">
+
+                <div class="musicNum">8.&nbsp;&nbsp;</div>
+                <div class="musicTitle7">1</div>
+                <div style="margin-left: auto; margin-right: 20px" class="rate7"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

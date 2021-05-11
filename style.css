@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgba(188, 188, 188, 0.7)
+}
+
+.container {
+    display: flex;
+    /*align-content: space-between;*/
+    justify-content: center;
+    align-content: center;
+
+}
+
+.leftPart {
+    display: flex;
+    width: 50vw;
+    height: 95vh;
+    box-sizing: border-box;
+    /*padding: 2em;*/
+    background-color: rgba(255, 255, 255, 0.7);
+    /*opacity: 0.7;*/
+    /*margin: auto;*/
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+    font-size: 1.6em;
+    margin: 15px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.musicControl {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 50%;
+}
+
+/*.icons {*/
+/*    margin-left: 20px;*/
+/*}*/
+
+.musicPlaying {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
+}
+
+.musicImg {
+    display: flex;
+    /*width: 40vw;*/
+    height: 60vh;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+    font-size: 1.6em;
+    border-radius: 20px;
+    margin: 60px 15px 15px;
+
+}
+
+.rightPart {
+    display: flex;
+    width: 50vw;
+    height: 95vh;
+    box-sizing: border-box;
+    /*padding: 2em;*/
+    background-color: rgba(255, 255, 255, 0.7);
+    /*opacity: 0.7;*/
+    /*margin: auto;*/
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+    font-size: 1.6em;
+    margin: 15px;
+    border-radius: 20px;
+
+
+}
+
+.musics {
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    /*text-align: center;*/
+
+}
+
+.music {
+    display: flex;
+    margin-top: 20px;
+    width: 40vw;
+    height: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    /*justify-content: flex-end;*/
+    align-items: center;
+    color: white;
+    font-family: 'MuseoModerno', cursive;
+    padding-left: 15px;
+    transition:0.3s;
+
+
+}
+
+.music:hover {
+    background-color: #8d8a8a;
+}
+
+/*.mus1 {*/
+/*    background-color: lightyellow;*/
+/*    color: black;*/
+/*}*/
+
+.musColor {
+    background-color: lightyellow;
+    color: black;
+}
+
+.musicControlIcons:hover {
+    transform: scale(1.5);
+    height: 10%
+}
+
+.playlist {
+    font-family: 'MuseoModerno', cursive;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .leftPart, .rightPart {
+        width: 80vw;
+    }
+
+    .musicImg {
+        width: 70vw;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ABABAB;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #606060;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8C8B8B;
+}
+
+
+/* style for the progress bar */
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    z-index: 4;
+    height: 5px;
+    background: #000000;
+    width: 160pt;
+    bottom: 10%;
+    border-radius: 30px;
+}
+
+/* style for the progress bar's slider thumb */
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -3px;
+    margin-left: 0px;
+    height: 10px;
+    width: 7px;
+    border: 0;
+    background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), rgb(117, 117, 117));
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* style for the progress bar's runnable track */
+#progress-bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    max-height: 5px;
+    border-radius: 30px;
+}
+
+/* style to remove blue shade of the progress bar when clicked on/selected */
+#progress-bar:focus {
+    outline: none;
+}
