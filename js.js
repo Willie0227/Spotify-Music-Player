@@ -6,14 +6,14 @@ const playlist = [
         name: "Faded",
         audio: "music/Alan Walker - Faded.mp3",
         author: "Alan Walker",
-        rate: "rate: 4 stars",
+        rate: "rating: 4 stars",
         poster: "images/MV5BZTUyYWI4Y2EtZGQ2MC00NDNiLTg3N2UtMWMwY2I1ZTViYzA4XkEyXkFqcGdeQXVyMTY5MDE5NA@@._V1_.jpg"
     },
     {
         name: "Senorita",
         audio: "music/Shawn Mendes, Camila Cabello - Señorita.mp3",
         author: "Shawn Mendes",
-        rate: "rate: 5 stars",
+        rate: "rating: 5 stars",
         poster: "images/artworks-000610058968-nebvy6-t500x500.jpg"
 
     },
@@ -21,7 +21,7 @@ const playlist = [
         name: "Yummy",
         audio: "music/Justin Bieber - Yummy (Official Video).mp3",
         author: "Justin Bieber",
-        rate: "rate: 4.5 stars",
+        rate: "rating: 4.5 stars",
         poster: "images/799f2655903a772fd93e90ba975b4730.jpg"
 
     },
@@ -29,7 +29,7 @@ const playlist = [
         name: "Starboy",
         audio: "music/The Weeknd - Starboy ft. Daft Punk (Official Video).mp3",
         author: "The Weekend",
-        rate: "rate: 4 stars",
+        rate: "rating: 4 stars",
         poster: "images/51hGPt6EKWL._AC_.jpg"
 
     },
@@ -37,7 +37,7 @@ const playlist = [
         name: "Waiting for love",
         audio: "music/Avicii - Waiting For Love.mp3",
         author: "Avicii",
-        rate: "rate: 4 stars",
+        rate: "rating: 4 stars",
         poster: "images/Avicii's_Waiting_For_Love,_Cover_Artwork.png"
 
     },
@@ -45,7 +45,7 @@ const playlist = [
         name: "Cold Water",
         audio: "music/Major Lazer - Cold Water (feat. Justin Bieber & MØ) (Official Lyric Video).mp3",
         author: "Major Lazer",
-        rate: "rate: 4 stars",
+        rate: "rating: 4 stars",
         poster: "images/MV5BZTY4ZWU1ZGEtMmJmYS00MTYyLWFiYjYtYzA2MzI0OTZiMWYwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc2MDk5ODM@._V1_.jpg"
 
     },

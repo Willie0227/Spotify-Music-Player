@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: rgba(188, 188, 188, 0.7)
+    /*background-color: rgba(188, 188, 188, 0.7)*/
+    background-image: url("images/bgcolor2.jpg");
 }
 
 .container {
@@ -20,7 +21,10 @@ body {
     height: 95vh;
     box-sizing: border-box;
     /*padding: 2em;*/
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
+    /*background-image: url("images/vecteezy_white-background_mw0221.jpg");*/
+    /*background-image: url("images/gradientBg02.jpg");*/
+    /*background-size: 100%;*/
     /*opacity: 0.7;*/
     /*margin: auto;*/
     text-align: left;
@@ -73,7 +77,10 @@ body {
     height: 95vh;
     box-sizing: border-box;
     /*padding: 2em;*/
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
+    /*background-image: url("images/vecteezy_white-background_mw0221.jpg");*/
+    /*background-image: url("images/gradientBg02.jpg");*/
+    /*background-size: 100%;*/
     /*opacity: 0.7;*/
     /*margin: auto;*/
     text-align: left;
