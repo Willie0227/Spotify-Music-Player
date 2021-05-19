@@ -5,14 +5,14 @@ const playlist = [
     {
         name: "Faded",
         audio: "music/Alan Walker - Faded.mp3",
-        author: "Alan Walker",
+        author: "BY: Alan Walker",
         rate: "rating: 4 stars",
         poster: "images/MV5BZTUyYWI4Y2EtZGQ2MC00NDNiLTg3N2UtMWMwY2I1ZTViYzA4XkEyXkFqcGdeQXVyMTY5MDE5NA@@._V1_.jpg"
     },
     {
         name: "Senorita",
         audio: "music/Shawn Mendes, Camila Cabello - Señorita.mp3",
-        author: "Shawn Mendes",
+        author: "BY: Shawn Mendes",
         rate: "rating: 5 stars",
         poster: "images/artworks-000610058968-nebvy6-t500x500.jpg"
 
@@ -20,15 +20,16 @@ const playlist = [
     {
         name: "Yummy",
         audio: "music/Justin Bieber - Yummy (Official Video).mp3",
-        author: "Justin Bieber",
-        rate: "rating: 4.5 stars",
+        audio: "music/Justin Bieber - Yummy (Official Video).mp3",
+        author: "BY: Justin Bieber",
+        rate: "rating: 4 stars",
         poster: "images/799f2655903a772fd93e90ba975b4730.jpg"
 
     },
     {
         name: "Starboy",
         audio: "music/The Weeknd - Starboy ft. Daft Punk (Official Video).mp3",
-        author: "The Weekend",
+        author: "BY: The Weekend",
         rate: "rating: 4 stars",
         poster: "images/51hGPt6EKWL._AC_.jpg"
 
@@ -36,7 +37,7 @@ const playlist = [
     {
         name: "Waiting for love",
         audio: "music/Avicii - Waiting For Love.mp3",
-        author: "Avicii",
+        author: "BY: Avicii",
         rate: "rating: 4 stars",
         poster: "images/Avicii's_Waiting_For_Love,_Cover_Artwork.png"
 
@@ -44,7 +45,7 @@ const playlist = [
     {
         name: "Cold Water",
         audio: "music/Major Lazer - Cold Water (feat. Justin Bieber & MØ) (Official Lyric Video).mp3",
-        author: "Major Lazer",
+        author: "BY: Major Lazer",
         rate: "rating: 4 stars",
         poster: "images/MV5BZTY4ZWU1ZGEtMmJmYS00MTYyLWFiYjYtYzA2MzI0OTZiMWYwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc2MDk5ODM@._V1_.jpg"
 
@@ -52,16 +53,16 @@ const playlist = [
     {
         name: "Thinking Out Loud",
         audio: "music/Ed Sheeran - Thinking Out Loud (Official Music Video).mp3",
-        author: "Ed Sheeran",
-        rate: "rate: 5 stars",
+        author: "BY: Ed Sheeran",
+        rate: "rating: 5 stars",
         poster: "images/d00644b625f0421bc26c541f86773868.jpg"
 
     },
     {
         name: "Shape of you",
         audio: "music/Ed Sheeran - Shape of You (Official Music Video).mp3",
-        author: "Ed Sheeran",
-        rate: "rate: 5 stars",
+        author: "BY: Ed Sheeran",
+        rate: "rating: 5 stars",
         poster: "images/MV5BNmVmNWQ0YjktMjE1OS00YzViLWIxYjYtYjc0ZDI2NGY1OTdjXkEyXkFqcGdeQXVyNzA1MTE4MTU@._V1_.jpg"
     }
 
@@ -75,6 +76,11 @@ for (var i = 0; i < 8; i++) {
 for (var i = 0; i < 8; i++) {
     document.querySelector(".rate" + i).innerHTML = playlist[i].rate
 }
+
+for (var i = 0; i < 8; i++) {
+    document.querySelector(".Artist" + i).innerHTML = playlist[i].author
+}
+
 
 // for (var i = 0; i < 8; i++) {
 const pictures = document.querySelector(".musicImg")
@@ -280,7 +286,7 @@ function choice(musNum) {
     updateColor()
     song.load()
     pickSong()
-    song.play()
+    // song.play()
 }
 
 function updateColor() {
