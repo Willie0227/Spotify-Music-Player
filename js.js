@@ -127,6 +127,7 @@ function checkPlay() {
 isLoop = false
 
 function repeatSong() {
+    isPlay = true
     isLoop = !isLoop
     song.loop = isLoop
     console.log(isLoop)
