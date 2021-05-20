@@ -96,35 +96,17 @@ function pickSong() {
     song.addEventListener('ended', function () {
         nextSong();
     });
-//     for (var i = 0; i < 8; i++) {
-//         document.querySelector(".mus" + i).classList.remove("musColor")
-//
-//     }
-//     document.querySelector(".mus" + musNum).classList.add("musColor")
-//     // songOrder = musNum
-//     for (var i = 0; i < musNum; i++) {
-//         const tempSong = songAddress.shift();
-//         songAddress.push(tempSong);
-//         // songAddress[musNum].play()
-//     }
-//     console.log(songAddress[0])
-//     songAddress[0].play()
-//
 }
 
 pickSong()
 
 function play() {
-    // playlist[index].audio.load()
-    // isPlay = !isPlay
-    // console.log(isPlay)
     song.play();
     console.log(song)
 }
 
-//
+
 function pause() {
-    // var song = new Audio(playlist[index].audio);
     song.pause();
     console.log(song)
 }
@@ -165,15 +147,8 @@ function nextSong() {
     index++
     warpIndex()
     pickSong()
-
-    // for (var i = 0; i < 8; i++) {
-    //     document.querySelector(".musicTitle" + i).innerHTML = songsList[i]
-    // }
-
     song.play();
     updateColor()
-
-    // printQueue();
 }
 
 function warpIndex() {
@@ -203,19 +178,6 @@ function lastSong() {
 function random() {
 
     song.load()
-
-    // for (var i = playlist.length - 1; i > 0; i--) {
-    // lengthSong = playlist.length - 1
-    // var j = Math.floor(Math.random() * (lengthSong + 1));
-    //     var temp = playlist[i].name;
-    //     playlist[i].name = playlist[j].name;
-    //     playlist[j].name = temp;
-    //
-    //     var temp2 = playlist[i].audio;
-    //     playlist[i].audio = playlist[j].audio;
-    //     playlist[i].audio = temp2;
-    // }
-
     playlist.sort(() => Math.random() - 0.5);
 
     for (var i = 0; i < 8; i++) {
@@ -227,28 +189,8 @@ function random() {
 
 }
 
-// //
-// // document.addEventListener("keydown", togglePlay)
-// //
-// //
-// // var isPlaying = false;
-//
-// // function togglePlay(event) {
-// //     if (event.keyCode === 32) {
-// //         isPlaying ? songAddress[0].pause() : songAddress[0].play();
-// //     }
-// // }
-// //
-// // songAddress[0].onplaying = function () {
-// //     isPlaying = true;
-// // }
-// // songAddress[0].onpause = function () {
-// //     isPlaying = false;
-// // }
-
 const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
 
-// update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
 function updateProgressValue() {
     progressBar.max = song.duration;
     progressBar.value = song.currentTime;
@@ -286,7 +228,8 @@ function choice(musNum) {
     updateColor()
     song.load()
     pickSong()
-    // song.play()
+    isPlay = true
+    song.play()
 }
 
 function updateColor() {
